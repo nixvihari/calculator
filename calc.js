@@ -124,11 +124,20 @@ function clearbox()
 {
     exp = ""
     document.getElementById("out").innerHTML = exp
+    document.getElementById("res").innerHTML = exp
 }
 
+function leftbracket()
+{
+        exp = exp + ' ' + "(" + ' ';
+        document.getElementById("out").innerHTML = exp
+}
 
-
-
+function rightbracket()
+{
+        exp = exp + ' ' + ")" + ' ';
+        document.getElementById("out").innerHTML = exp
+}
 
 
 
