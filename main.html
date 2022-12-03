@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Simple calculator</title>
+
+        <style>
+            .mainheading
+            {
+                color:rgb(11, 129, 208);
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-align: center;
+
+                padding-left: 50px;
+                padding-right:50px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                background-color: antiquewhite;
+
+                border-style: solid;
+                border-color: black;
+                border-width: 3px;
+                border-radius: 2px;
+            }
+            .left
+            {
+                float:left;
+                width: 47%;
+                height:500px;
+
+                padding:5px;
+                background-color: white;
+                
+                border-style: solid;
+                border-color:black;
+                border-width: 3px;
+                border-radius: 5px;
+            }
+
+            .right
+            {
+                float: right;
+                width:47%;
+                height:500px;
+
+                padding: 5px;
+                background-color: white;
+
+                border-style: solid;
+                border-color:black;
+                border-width: 3px;
+                border-radius: 5px;
+
+            }
+
+
+
+
+
+
+
+
+            .display
+            {
+                float:left;
+                width:30%;
+                height: 50px;
+                border-style: solid;
+                border-color: black;
+
+                font-size:18px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: right;
+
+                padding:3px;
+            }
+
+            .result
+            {
+                float:left;
+                width:30%;
+                height: 50px;
+                border-style: solid;
+                border-color: black;
+
+                font-size:18px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: right;
+
+                padding:3px;
+            }
+
+            .message
+            {
+                float:left;
+                color:red;
+                font-weight: bold;
+            }
+
+
+
+
+
+
+
+            .row1 button,.row2 button,.row3 button,.row4 button,.row5 button
+            {
+                padding: 20px;
+                font-size: 24px;
+                background-color: antiquewhite;
+            }
+            .row1,.row2,.row3,.row4,.row5
+            {
+                
+                float:left;
+                width:50%;
+                content: "";
+                clear: both;
+                display: table;
+            }
+            
+            
+
+        </style>
+    </head>
+
+    <body style="background-color:rgb(245, 223, 255)">
+
+        <script src="/Users/nikunjkonakalla/Documents/fsd/calculator/calc.js"></script>
+
+
+
+        <h1 class="mainheading">FingerTips Calculator</h1>
+        <div class="left">
+            <h1>Left aligned</h1>
+            <p>this paragraph is left aligned</p>
+        </div>
+        <div class="right">
+            <h1>Right aligned</h1>
+            <p>this paragraph is right aligned</p>
+            
+            <div class="row1">
+                <button onclick="clearbox()" style="padding:20px 18px;">C</button>
+                <button style="padding:20px 15px;">-()</button>
+                <button style="padding:20px 16px;">%</button>
+                <button style="padding:20px 23px;">/</button>
+            </div>
+            
+            <div class="display">
+                <p id="out">Enter an expression</p>
+            </div>
+
+            <div class="row2">
+                <button onclick="dis7()">7</button>
+                <button onclick="dis8()">8</button>
+                <button onclick="dis9()">9</button>
+                <button onclick="disx()" style="padding:20px 20px;">×</button>
+            </div>
+
+            <div class="result">
+                <p id="res">Result</p>
+            </div>
+
+            <div class="row3">
+                <button onclick="dis4()">4</button>
+                <button onclick="dis5()">5</button>
+                <button onclick="dis6()">6</button>
+                <button onclick="disminus()" style="padding:20px 23px;">-</button>
+            </div>
+
+            <div class="message">
+                <p id="warnuser">This is a message section to the user.</p>
+            </div>
+
+            <div class="row4">
+                <button onclick="dis1()">1</button>
+                <button onclick="dis2()">2</button>
+                <button onclick="dis3()">3</button>
+                <button onclick="displus()">+</button>
+            </div>
+
+            <div class="row5">
+                <button onclick="dis0()" style="padding:20px 49px;">0</button>
+                <button onclick="period()" style="padding:20px 23px;">.</button>
+                <button>=</button>
+            </div>
+
+            
+        </div>
+    </body>
+</html>
