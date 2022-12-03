@@ -29,7 +29,7 @@
                 height:500px;
 
                 padding:5px;
-                background-color: white;
+                background-color: antiquewhite;
                 
                 border-style: solid;
                 border-color:black;
@@ -44,7 +44,7 @@
                 height:500px;
 
                 padding: 5px;
-                background-color: white;
+                background-color: rgb(245, 223, 255);
 
                 border-style: solid;
                 border-color:black;
@@ -53,7 +53,19 @@
 
             }
 
+            .left p
+            {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px;
+                font-weight: bold;
+            }
 
+            .rightinfo
+            {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 20px;
+                font-weight: bold;
+            }
 
 
 
@@ -132,12 +144,15 @@
 
         <h1 class="mainheading">FingerTips Calculator</h1>
         <div class="left">
-            <h1>Left aligned</h1>
-            <p>this paragraph is left aligned</p>
+            <h1>A Simple Calculator</h1>
+            <p>User Guide</p><br>
+            <p>- Click on the buttons to enter the values and operands</p><br>
+            <p>- Use backets to group terms </p><br>
+            <p>- Use opernads before and after brackets to get the correct output</p>
         </div>
         <div class="right">
-            <h1>Right aligned</h1>
-            <p>this paragraph is right aligned</p>
+            <h1>Simulator</h1>
+            <p class="rightinfo">Have Fun! :p</p>
             
             <div class="row1">
                 <button onclick="clearbox()" style="padding:20px 18px;">C</button>
