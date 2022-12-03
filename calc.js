@@ -1,7 +1,7 @@
 
 //global variable
 let exp=""
-let proceed=TRUE;
+let proceed=true
 
 
 // button fiunctions
@@ -68,32 +68,53 @@ function dis9()
 
 function disx()
 {
-    exp = exp + "*";
-    document.getElementById("out").innerHTML = exp
+    iscorrect()
+    if(proceed)
+    {
+        exp = exp + "*";
+        document.getElementById("out").innerHTML = exp
+    }
 }
 
 function disby()
 {
-    exp = exp + "/";
-    document.getElementById("out").innerHTML = exp
+    iscorrect()
+    if(proceed)
+    {
+        exp = exp + "/";
+        document.getElementById("out").innerHTML = exp
+    }
 }
 
 function disminus()
 {
-    exp = exp + "-";
-    document.getElementById("out").innerHTML = exp
+    iscorrect()
+    if(proceed)
+    {
+        exp = exp + "-";
+        document.getElementById("out").innerHTML = exp
+    }
 }
 
 function displus()
 {
-    exp = exp + "+";
-    document.getElementById("out").innerHTML = exp
+    iscorrect()
+    if(proceed)
+    {
+        exp = exp + "+";
+        document.getElementById("out").innerHTML = exp
+    }
 }
 
 function period()
 {
-    exp = exp + ".";
-    document.getElementById("out").innerHTML = exp
+    iscorrect();
+    if(proceed)
+    {
+        exp = exp + ".";
+        document.getElementById("out").innerHTML = exp
+    }
+
 }
 
 
@@ -105,15 +126,44 @@ function clearbox()
     document.getElementById("out").innerHTML = exp
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 2 evaluate funcs - one for Percent and other to evaluate the expression
 // 3rd function experimental - real time expression processing, to prevent invalid user input
 
 function iscorrect()
 {
     //stuff to check for 
-    //decimal point     operator_sequence   
-}
-function evaluate()
-{
+    //decimal point     operator_sequence  
+    proceed = true 
+    let len = exp.length
+    val = exp[len-1]
+    val = parseInt(val)
+
+    if(isNaN((val)))
+    {
+        proceed = false
+    }
     
 }
+
+function calc()
+{
+   
+}
+
+
+
