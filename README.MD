@@ -1,9 +1,9 @@
-## FingerTips Calculator: A simple calculator program
+## FingerTips Calculator: A simple calculator webpage
 
-![Calculator page](./sample.png "fingertips calculator page img")
+![Calculator page](sample.png "fingertips calculator page img")
 
 
-![Calculator image](./sample1.png "fingertips calculator img")
+![Calculator image](sample1.png "fingertips calculator img")
 
 This program uses HTML to struture the webpage and uses CSS to style the page.
 
@@ -15,6 +15,8 @@ Additional function are used to prevent successive operator entries by user.
 Credits:
 Array expression evaluation from Geeks For Geeks.
 
+Article link: 
 <https://www.geeksforgeeks.org/expression-evaluation/>
 
-
+Contribution by :
+<https://www.geeksforgeeks.org/>
